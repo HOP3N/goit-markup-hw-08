@@ -1,0 +1,157 @@
+.header {
+    height: 80px;
+    display: flex;
+  }
+  
+  .header__port {
+    border-bottom: 1px solid #ececec;
+  }
+
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+  
+  .header__main {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    display: flex;
+  }
+  
+    .navigation {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    background-color: transparent;
+    margin-right: 93px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+  }
+  
+  .logo__title {
+    color: var(--text-hover-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .logo__sub-title {
+    color: var(--main-text-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  
+  .menu__item,
+  .connect__item {
+    list-style: none;
+    background-color: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &:hover,
+      :focus {
+        color: var(--text-hover-color);
+        background-color: transparent;
+    }
+  }
+  
+  .header__link {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+    background-color: transparent;
+    padding: 32px 0px 32px;
+    display: block;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+
+      &:hover,
+      :focus {
+        color: var(--text-hover-color);
+        background-color: transparent;
+    }
+  }
+
+  .menu__item, 
+  .connect__item .header__link {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    
+    &:hover,
+      :focus {
+        color: var(--text-hover-color);
+        background-color: transparent;
+    }
+  }
+  
+  .header__link.current {
+    color: var(--text-hover-color);
+    list-style: none;
+    background-color: none;
+    position: relative;
+
+      &::after {
+        content: "";
+        background-color: var(--text-hover-color);
+        width: 100%;
+        height: 4px;
+        left: 0px;
+        bottom: -2px;
+        border-radius: 2px;
+        position: absolute;
+    }
+  }
+  
+  .menu__list {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .connect__list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+  
+  .connect__link {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--text-contact);
+    fill: currentColor;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    
+
+      &:hover,
+      :focus {
+        color: var(--text-hover-color);
+        background-color: transparent;
+    }
+  }
+  
+
+
+  .connect__icon {
+    fill: currentColor;
+  }

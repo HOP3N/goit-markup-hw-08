@@ -1,0 +1,170 @@
+.footer {
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+
+  
+  .footer__logo-title {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--text-hover-color);
+    margin-bottom: 20px;
+  }
+  
+  .footer__logo-subtitle {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--text-hover-color);
+    color: var(--sub-text-color);
+    margin-bottom: 20px;
+  }
+  
+  .footer__item {
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--sub-text-color);
+    font-style: normal;
+    list-style: none;
+
+  }
+  .footer__item-street {
+    margin: 20px 0 9px 0;
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--sub-text-color);
+    font-style: normal;
+    list-style: none;
+
+  }
+
+  .footer__link {
+    font-weight: 400;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 9px 0;
+    list-style: none;
+  }
+
+//   /* ------SOC LINKS----------------- */
+  
+  .footer__container {
+    display: flex;
+    align-items: baseline;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+  
+  .footer__contacts {
+    justify-content: start;
+    align-items: center;
+  }
+  
+  .footer-soc {
+    flex-direction: column;
+    align-content: center;
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .title-soc-footer {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--sub-text-color);
+    justify-content: flex;
+    margin-bottom: 10px;
+  }
+  
+  .team__soc-list {
+    align-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .team__soc-item {
+    align-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+  }
+  
+  .team-soc-link {
+    fill: var(--sub-text-color);
+  }
+  
+  .team-soc-icon-footer {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    fill: var(--sub-text-color);
+  }
+  
+//   /* ---------------SUBSCRIBE--------------- */
+  
+  .modal-input-footer .footer-soc {
+    width: 358px;
+    height: 50px;
+    fill: none;
+    background-color: #2f303a;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 30px;
+  }
+  
+  .modal-input-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .modal-input-footer {
+    position: center;
+    width: 358px;
+    height: 50px;
+    left: 576px;
+    top: 314px;
+    color: var(--main-text-color);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+  }
+  
+  .btn-footer {
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding: 10px 62px 10px 28px;
+    margin-left: 12px;
+    background-image: url(../images/icon-send.svg);
+    background-repeat: no-repeat;
+    background-position: top 13px right 28px;
+    
+  }  
+  
+  .btn-footer .btn-main-index {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--sub-text-color);
+  }
+  
