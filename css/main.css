@@ -46,6 +46,9 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 .visually-hidden {
@@ -584,7 +587,7 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -724,14 +727,15 @@ img {
 }
 
 .hero {
-  padding: 200px 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   text-align: center;
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-index-hero.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 1600px;
+  width: 100%;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -746,7 +750,6 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  max-width: 1200px;
   margin-bottom: 30px;
 }
 
