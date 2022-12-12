@@ -92,7 +92,10 @@
 //  ------------------------ BENEFITS INDEX ---------------------
   
 .benefits {
-  padding: 94px 0px;
+  padding: 94px 0;
+  @media screen and(min-width: 768px) {
+    padding: 60px 0;
+  }
 }  
 
 .benefits__wrap {
@@ -102,14 +105,24 @@
 .benefits__list {
     display: flex;
     column-gap: 30px;
+    @media screen and(min-width: 768px) {
+      flex-wrap: wrap;
+    }
   }
   
   .benefits__item {
     list-style: none;
+    width: 100%;
+    @media screen and(min-width: 768px) {
+      width: calc((100% - 30px) / 2 );
+    }
   }
 
   .benefits__image {
     width: 270px;
+    @media screen and(min-width: 768px) {
+      width: 100%;
+    }
     height: 120px;
     background-color: #f5f4fa;
     border-radius: 4px;
@@ -129,6 +142,9 @@
   .benefits__title {
     margin-bottom: 10px;
     font-size: 16px;
+    @media screen and(min-width: 768px) {
+      font-size: 14px;
+    }
     font-style: normal;
     font-weight: 700;
     line-height: 1.1;
@@ -139,6 +155,10 @@
   .benefits__sub-title {
     font-style: normal;
     font-weight: 400;
+    @media screen and(min-width: 768px) {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
     line-height: 1.7;
     color: var(--text-contact);
     max-width: 322px;

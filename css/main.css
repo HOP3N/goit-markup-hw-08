@@ -145,7 +145,12 @@ img {
 }
 
 .benefits {
-  padding: 94px 0px;
+  padding: 94px 0;
+}
+@media screen and (min-width: 768px) {
+  .benefits {
+    padding: 60px 0;
+  }
 }
 
 .benefits__wrap {
@@ -156,9 +161,20 @@ img {
   display: flex;
   column-gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    flex-wrap: wrap;
+  }
+}
 
 .benefits__item {
   list-style: none;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    width: calc((100% - 30px) / 2);
+  }
 }
 
 .benefits__image {
@@ -170,6 +186,11 @@ img {
   align-items: center;
   display: flex;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .benefits__image {
+    width: 100%;
+  }
 }
 
 .benefits__icon {
@@ -186,6 +207,11 @@ img {
   letter-spacing: 0.06em;
   color: var(--main-text-color);
 }
+@media screen and (min-width: 768px) {
+  .benefits__title {
+    font-size: 14px;
+  }
+}
 
 .benefits__sub-title {
   font-style: normal;
@@ -193,6 +219,12 @@ img {
   line-height: 1.7;
   color: var(--text-contact);
   max-width: 322px;
+}
+@media screen and (min-width: 768px) {
+  .benefits__sub-title {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
 }
 
 .services {
@@ -727,8 +759,7 @@ img {
 }
 
 .hero {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 200px 0px;
   text-align: center;
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-index-hero.png);
@@ -741,6 +772,22 @@ img {
   align-items: center;
   margin: 0 auto;
 }
+@media screen and (min-width: 320px) {
+  .hero {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+  }
+}
 
 .hero__title {
   font-style: normal;
@@ -751,6 +798,12 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.61;
+  }
 }
 
 .hero__btn {
