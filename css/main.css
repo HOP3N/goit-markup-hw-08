@@ -147,8 +147,11 @@ img {
 .benefits {
   padding: 94px 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .benefits {
+    width: 480px;
+    justify-content: center;
+    align-items: center;
     padding: 60px 0;
   }
 }
@@ -161,8 +164,15 @@ img {
   display: flex;
   column-gap: 30px;
 }
+@media screen and (min-width: 480px) {
+  .benefits__list {
+    width: 450px;
+    flex-wrap: wrap;
+  }
+}
 @media screen and (min-width: 768px) {
   .benefits__list {
+    width: 738px;
     flex-wrap: wrap;
   }
 }
@@ -171,9 +181,17 @@ img {
   list-style: none;
   width: 100%;
 }
+@media screen and (min-width: 480px) {
+  .benefits__item {
+    width: 450px;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 768px) {
   .benefits__item {
     width: calc((100% - 30px) / 2);
+    flex-wrap: wrap;
   }
 }
 
@@ -187,9 +205,18 @@ img {
   display: flex;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 480px) {
+  .benefits__image {
+    width: 450px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 768px) {
   .benefits__image {
-    width: 100%;
+    width: 354px;
+    height: 120px;
   }
 }
 
@@ -207,8 +234,15 @@ img {
   letter-spacing: 0.06em;
   color: var(--main-text-color);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .benefits__title {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .benefits__title {
+    text-align: left;
     font-size: 14px;
   }
 }
@@ -220,7 +254,7 @@ img {
   color: var(--text-contact);
   max-width: 322px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .benefits__sub-title {
     font-size: 14px;
     margin-bottom: 30px;
@@ -624,6 +658,11 @@ img {
   padding-right: 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
 
 .header__main {
   width: 1200px;
@@ -766,7 +805,6 @@ img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
   position: relative;
   justify-content: center;
   align-items: center;
