@@ -105,13 +105,6 @@
     // flex-wrap: wrap;
   }
   
-  // @media screen and(min-width: 1200px) {
-  //   width: 1200px;
-  //   // flex-wrap: wrap;
-  //   // display: flex;
-  //   // column-gap: 30px;
-
-  // }
 }  
 
 .benefits__wrap {
@@ -146,8 +139,8 @@
   
   .benefits__item {
     list-style: none;
-    // display: flex;
-    // width: 100%;
+    display: flex;
+    
 
     @media screen and(min-width: 480px) {
       width: 450px;
@@ -160,9 +153,6 @@
     }
     @media screen and(min-width: 1200px) {
       width: calc((100% - 90px) / 4 );
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
     }
   }
 
