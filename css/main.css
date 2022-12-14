@@ -504,6 +504,14 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (min-width: 480px) {
+  .clients {
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 .clients__title {
   font-weight: 700;
@@ -513,15 +521,55 @@ img {
   color: var(--main-text-color);
   margin-bottom: 50px;
 }
+@media screen and (min-width: 480px) {
+  .clients__title {
+    font-style: 28px;
+  }
+}
 
 .clients__list {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
+@media screen and (min-width: 480px) {
+  .clients__list {
+    width: 100%;
+    justify-content: center;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__list {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
 
 .clients__item {
   list-style: none;
+}
+@media screen and (min-width: 480px) {
+  .clients__item {
+    width: calc((100% - 60px) / 2);
+    justify-content: center;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: calc((100% - 60px) / 3);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .clients__link {
@@ -538,6 +586,22 @@ img {
 .clients__link :focus {
   border-color: var(--text-hover-color);
   fill: var(--text-hover-color);
+}
+@media screen and (min-width: 480px) {
+  .clients__link {
+    width: 100%;
+    justify-content: center;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 100%;
+    justify-content: center;
+    text-align: left;
+    flex-wrap: wrap;
+  }
 }
 
 .clients__logo {
