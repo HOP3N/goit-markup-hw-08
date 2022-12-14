@@ -177,11 +177,13 @@ img {
   .benefits__list {
     width: 450px;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 768px) {
   .benefits__list {
     width: 738px;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
