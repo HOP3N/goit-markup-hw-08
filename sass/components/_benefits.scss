@@ -115,19 +115,22 @@
   
 .benefits__list {
     gap: 30px;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     
-    // @media screen and(min-width: 480px) {
-    //   width: 480px;
-    // }
+    @media screen and(min-width: 480px) {
+      width: 480px;
+      // flex-wrap: wrap;
+    }
     
     @media screen and(min-width: 768px) {
       width: calc((100% - 30px) / 2 );
       display: flex;
+    flex-wrap: nowrap;
     }
     
     @media screen and(min-width: 1200px) {
-      width: calc((100% - 90px) / 4 );
+      width: 100%;
+      flex-wrap: wrap;
     }
       
     }
@@ -141,6 +144,7 @@
     }
     @media screen and(min-width: 768px) {
       width: calc((100% - 30px) / 2 );
+      flex-wrap: wrap;
     }
     @media screen and(min-width: 1200px) {
       width: calc((100% - 90px) / 4 );
