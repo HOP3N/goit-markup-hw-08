@@ -146,74 +146,69 @@ img {
 
 .benefits {
   padding: 94px 0;
+  display: flex;
+  width: 100%;
 }
 @media screen and (min-width: 480px) {
   .benefits {
-    width: 450px;
-    align-items: center;
     padding: 60px 0;
   }
 }
+
+@media screen and (min-width: 480px) {
+  .benefits__wrap {
+    width: 480px;
+  }
+}
 @media screen and (min-width: 768px) {
-  .benefits {
-    width: 738px;
+  .benefits__wrap {
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
-  .benefits {
+  .benefits__wrap {
     width: 100%;
   }
 }
 
-.benefits__wrap {
-  width: 100%;
-}
-
 .benefits__list {
   display: flex;
-  column-gap: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 480px) {
   .benefits__list {
-    width: 450px;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .benefits__list {
     width: 738px;
-    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .benefits__list {
-    width: 1200px;
-    justify-content: center;
+    width: 100%;
   }
 }
 
 .benefits__item {
   list-style: none;
-  display: flex;
 }
 @media screen and (min-width: 480px) {
   .benefits__item {
-    width: 450px;
-    justify-content: center;
-    text-align: left;
-    flex-wrap: wrap;
+    width: calc((100% - 15px) / 2);
   }
 }
 @media screen and (min-width: 768px) {
   .benefits__item {
     width: calc((100% - 30px) / 2);
-    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
   .benefits__item {
-    width: calc((100% - 230px) / 4);
+    width: calc((100% - 90px) / 4);
+    flex-wrap: nowrap;
   }
 }
 
@@ -284,13 +279,11 @@ img {
   font-weight: 400;
   line-height: 1.7;
   color: var(--text-contact);
-  max-width: 322px;
 }
 @media screen and (min-width: 480px) {
   .benefits__sub-title {
     font-size: 14px;
     margin-bottom: 30px;
-    max-width: 100%;
   }
 }
 
@@ -824,9 +817,7 @@ img {
 }
 
 .container {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -981,21 +972,6 @@ img {
   .hero {
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .hero {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero {
-    width: 1200px;
   }
 }
 

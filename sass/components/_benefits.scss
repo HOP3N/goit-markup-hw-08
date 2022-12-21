@@ -93,55 +93,41 @@
   
 .benefits {
   padding: 94px 0;
+  display: flex;
+  width: 100%;
   @media screen and(min-width: 480px) {
-    width: 450px;
-    // justify-content: center;
-    align-items: center;
     padding: 60px 0;
   }
-
-  @media screen and(min-width: 768px) {
-    width: 738px;
-    // flex-wrap: wrap;
-  }
-
-  @media screen and(min-width: 1200px) {
-    width: 100%;
-    // flex-wrap: wrap;
-    // display: flex;
-    // column-gap: 30px;
-
-  }
-  
 }  
 
 .benefits__wrap {
-    // text-align: left;
+  @media screen and(min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and(min-width: 768px) {
     width: 100%;
+  }
+  
+  @media screen and(min-width: 1200px) {
+    width: 100%;
+  }
 }
   
 .benefits__list {
     display: flex;
-    column-gap: 30px;
+    gap: 30px;
+    flex-wrap: wrap;
     
     @media screen and(min-width: 480px) {
-      width: 450px;
-      flex-wrap: wrap;
-      justify-content: center;
+      width: 480px;
     }
     
     @media screen and(min-width: 768px) {
       width: 738px;
-      justify-content: center;
     }
     
     @media screen and(min-width: 1200px) {
-      width: 1200px;
-      justify-content: center;
-      // flex-wrap: wrap;
-      // display: flex;
-      // column-gap: 30px;
-
+      width: 100%;
     }
       
     }
@@ -149,22 +135,16 @@
   
   .benefits__item {
     list-style: none;
-    display: flex;
-    
 
     @media screen and(min-width: 480px) {
-      width: 450px;
-      justify-content: center;
-      text-align: left;
-      // align-items: center;
-      flex-wrap: wrap;
+      width: calc((100% - 15px) / 2 );
     }
     @media screen and(min-width: 768px) {
       width: calc((100% - 30px) / 2 );
-      flex-wrap: wrap;
     }
     @media screen and(min-width: 1200px) {
-      width: calc((100% - 230px) / 4 );
+      width: calc((100% - 90px) / 4 );
+      flex-wrap: nowrap;
     }
   }
 
@@ -235,10 +215,9 @@
     @media screen and(min-width: 480px) {
       font-size: 14px;
       margin-bottom: 30px;
-      max-width: 100%;
     }
     line-height: 1.7;
     color: var(--text-contact);
-    max-width: 322px;
+    // max-width: 322px;
   }
   
