@@ -180,7 +180,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .benefits__list {
-    width: calc((100% - 30px) / 2);
+    width: 768px;
     display: flex;
     flex-wrap: nowrap;
   }
@@ -815,11 +815,6 @@ img {
 
 .header__port {
   border-bottom: 1px solid #ececec;
-}
-
-.container {
-  padding: 0 15px;
-  margin: 0 auto;
 }
 
 .header__main {
