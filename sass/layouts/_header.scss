@@ -114,6 +114,10 @@
     display: flex;
     gap: 30px;
     text-align: center;
+
+    @media screen and(max-width: 767.98px) {
+      display: none;
+    }
   }
   
   .connect__list {
@@ -121,6 +125,10 @@
     align-items: center;
     margin-left: auto;
     justify-content: flex-end;
+
+    @media screen and(max-width: 767.98px) {
+      display: none;
+    }
   }
   
   .connect__link {
@@ -148,3 +156,19 @@
   .connect__icon {
     fill: currentColor;
   }
+
+  // ---------------button-------------
+
+  .burger {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+
+    &__icon {
+    display: block;
+  }
+
+@media screen and(min-width: 767.98px) {
+  display: none;
+}
+}
