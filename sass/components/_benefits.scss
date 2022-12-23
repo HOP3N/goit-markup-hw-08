@@ -107,6 +107,7 @@
 
 .benefits__list {
   list-style: none;
+  padding: 0 15px;
   @media screen and(min-width: 768px) {
     gap: 30px;
     flex-wrap: wrap;
