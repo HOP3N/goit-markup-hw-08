@@ -913,8 +913,16 @@ img {
 }
 
 .open-mobile-menu-button {
-  background-color: transparent;
+  height: 40px;
+  width: 40px;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
   padding: 0;
 }
 .open-mobile-menu-button__icon {
@@ -925,19 +933,21 @@ img {
     display: none;
   }
 }
-
-.mobile-menu__close-button {
+.open-mobile-menu-button .mobile-menu__close-button {
   background-color: transparent;
   border: none;
   padding: 0;
 }
-.mobile-menu__close-button__icon {
-  display: block;
-}
 @media screen and (min-width: 767.98px) {
-  .mobile-menu__close-button {
+  .open-mobile-menu-button .mobile-menu__close-button {
     display: none;
   }
+}
+.open-mobile-menu-button .mobile-menu__close-button__icon {
+  display: block;
+}
+.open-mobile-menu-button .mobile-menu__close-button.active .mobile-menu__close-button {
+  display: block;
 }
 
 .hero {

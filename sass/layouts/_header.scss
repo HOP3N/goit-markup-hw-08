@@ -162,8 +162,16 @@
   // ---------------button-------------
 
   .open-mobile-menu-button {
-    background-color: transparent;
+    height: 40px;
+    width: 40px;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
     padding: 0;
 
     &__icon {
@@ -173,18 +181,24 @@
 @media screen and(min-width: 767.98px) {
   display: none;
 }
-}
+
 
 .mobile-menu__close-button {
   background-color: transparent;
   border: none;
   padding: 0;
 
+  @media screen and(min-width: 767.98px) {
+    display: none;
+  }  
   &__icon {
   display: block;
 }
 
-@media screen and(min-width: 767.98px) {
-display: none;
+  &.active {
+    .mobile-menu__close-button {
+      display: block;
+    }
+  }
 }
-}
+  }
