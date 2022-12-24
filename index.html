@@ -30,11 +30,45 @@
                     <span class="logo__title">Web</span>
                     <span class="logo__sub-title">Studio</span>
                 </a>
-                <button class="burger" type="button" js-open-menu>
-                    <svg class="burger__icon" width="40" height="40">
+                <button class="open-mobile-menu-button" type="button" js-open-menu>
+                    <svg class="mobile-menu-button__icon" width="40" height="40">
                         <use href="./images/icons.svg#icon-burger"></use>
                     </svg>
                 </button>
+                <div class="mobile-menu">
+                    <div class="container mobile-menu__container">
+                        <button class="mobile-menu__close-button is-hidden" type="button" js-close-menu>
+                            <svg class="mobile-menu__close-icon" width="40" height="40">
+                                <use href="./images/icons.svg#icon-close"></use>
+                            </svg>
+                        </button>
+
+                        <nav class="mobile-menu__nav">
+                            <!-- <ul class="mobile-menu__list" js-menu-container>
+                                <li class="mobile-menu__item">
+                                    <a href="#hero" class="mobile-menu__link" onclick="closeMobileMenu()">Студія</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="#about" class="mobile-menu__link" onclick="closeMobileMenu()">Портфоліо</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="#store" class="mobile-menu__link" onclick="closeMobileMenu()">Store</a>
+                                </li> -->
+                                <!-- <li class="mobile-menu__item">
+                                    <a href="#delivery" class="mobile-menu__link"
+                                        onclick="closeMobileMenu()">Delivery</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="#blog" class="mobile-menu__link" onclick="closeMobileMenu()">Blog</a>
+                                </li> -->
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <script src="./js/mobile-menu.js">
+                </script>
+
                 <ul class="menu__list" js-menu-container>
                     <li class="menu__item"><a class="header__link current" href="./index.html">Студія</a></li>
                     <li class="menu__item"><a class="header__link" href="./portfolio.html">Портфоліо</a></li>

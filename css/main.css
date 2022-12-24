@@ -912,16 +912,30 @@ img {
   fill: currentColor;
 }
 
-.burger {
+.open-mobile-menu-button {
   background-color: transparent;
   border: none;
   padding: 0;
 }
-.burger__icon {
+.open-mobile-menu-button__icon {
   display: block;
 }
 @media screen and (min-width: 767.98px) {
-  .burger {
+  .open-mobile-menu-button {
+    display: none;
+  }
+}
+
+.mobile-menu__close-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.mobile-menu__close-button__icon {
+  display: block;
+}
+@media screen and (min-width: 767.98px) {
+  .mobile-menu__close-button {
     display: none;
   }
 }
