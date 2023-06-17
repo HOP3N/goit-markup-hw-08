@@ -1,125 +1,112 @@
 .hero {
-    padding: 200px 0px;
-    @media screen and(min-width: 320px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    }
-    
-    text-align: center;
-    background-color: #2f303a;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/bg-index-hero.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-  }
-  
-  .hero__title {
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+  padding: 200px 0;
+  text-align: center;
+  background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-index-hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 
-    @media screen and(min-width: 480px) {
+  @media screen and (max-width: 480px) {
+    padding: 60px 0;
+  }
+}
+
+.hero__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 480px) {
     font-size: 26px;
-    line-height: 1.61;    
+    line-height: 1.61;
   }
-  
-  @media screen and(min-width: 1200px) {
-    font-size: 44px;
-    line-height: 1.36;
-  }
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #ffffff;
-    // max-width: 1200px;
-    // justify-content: center;
-    // align-items: center;
-    // align-content: center;
-    margin-bottom: 30px;
-  }
-  
-  .hero__btn {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    align-items: center;
-    margin-top: 30px;
-    text-align: center;
-    padding: 10px 32px;
+}
+
+.hero__btn {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  align-items: center;
+  margin-top: 30px;
+  text-align: center;
+  padding: 10px 32px;
+  color: var(--sub-text-color);
+  background-color: var(--text-hover-color);
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+  margin: 0 auto;
+  display: block;
+
+  &:hover,
+  &:focus {
     color: var(--sub-text-color);
     background-color: var(--text-hover-color);
-    border: 0;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: 4px;
-    margin: 0 auto;
-    display: block;
-
-    &:hover,
-    :focus {
-      color: var(--sub-text-color);
-      background-color: var(--text-hover-color);
-    }
   }
+}
 
-  // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<PORTFOLIO>>>>>>>>>>>>>>
+.btn__main--wrap {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 56px;
+}
 
-  .btn__main--wrap {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 56px;
+.btn__list {
+  list-style: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--text-hover-color);
+    background-color: transparent;
+    color: var(--sub-text-color);
+    background-color: var(--text-hover-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
   }
-  
-  .btn__list {
-    list-style: none;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-    &:hover,
-    :focus {
-        color: var(--text-hover-color);
-        background-color: transparent;
-        color: var(--sub-text-color);
-        background-color: var(--text-hover-color);
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-          0px 2px 2px rgba(0, 0, 0, 0.12);
-      }
-  } 
+.btn__main {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--main-text-color);
+  cursor: pointer;
+  background-color: #f5f4fa;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+  border: none;
+  padding: 6px 23px;
 
-  .btn__main {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    color: var(--main-text-color);
-    cursor: pointer;
-    background-color: #f5f4fa;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: 4px;
-    border: none;
-    padding: 6px 23px;
-
-    &:hover,
-    :focus {
-      color: var(--text-hover-color);
-      background-color: transparent;
-      color: var(--sub-text-color);
-      background-color: var(--text-hover-color);
-      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
-      0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-    }
+  &:hover,
+  &:focus {
+    color: var(--text-hover-color);
+    background-color: transparent;
+    color: var(--sub-text-color);
+    background-color: var(--text-hover-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
   }
+}
